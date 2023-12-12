@@ -1,0 +1,45 @@
+Incident Documentation: YummyRecipesForMe.com Compromise
+
+Incident Overview:
+
+Target: yummyrecipesforme.com, a recipe and cookbook-selling website.
+Perpetrator: Disgruntled baker executing a brute force attack to gain unauthorized access.
+Attack Vector:
+Brute force attack on the web host's administrative account using known default passwords.
+Successful login leading to unauthorized access to the admin panel.
+Modification of website source code to embed a malicious javascript function.
+Javascript prompts visitors to download and run a file upon accessing the website.
+Downloaded file redirects users to a fake website (greatrecipesforme.com) where recipes are available for free.
+Customer Impact:
+Multiple customers reported being prompted to download a file for browser update.
+Post-download, redirection to greatrecipesforme.com and slowed computer performance.
+Investigation Details:
+
+Analysis Steps:
+Creation of a sandbox environment for observation.
+Use of network protocol analyzer tcpdump.
+Accessing yummyrecipesforme.com resulted in a prompt to download an executable file.
+Executing the file led to browser redirection to greatrecipesforme.com.
+Network Protocol Actions:
+Browser requests DNS resolution for yummyrecipesforme.com.
+DNS replies with the correct IP address.
+Browser initiates HTTP request for the webpage.
+Browser initiates download of malware.
+Browser requests DNS resolution for greatrecipesforme.com.
+DNS server responds with the new IP address.
+Browser initiates HTTP request to the new IP address.
+Source Code Analysis:
+
+Modification: Addition of javascript code prompting visitors to download an executable file.
+Downloaded File: Contains a script redirecting browsers from yummyrecipesforme.com to greatrecipesforme.com.
+Root Cause:
+
+Brute force attack success due to:
+Admin password set to default.
+Lack of controls preventing brute force attempts.
+Recommendation to Prevent Future Attacks:
+
+
+Multi-Factor Authentication (MFA):
+Enforce MFA for sensitive accounts.
+Adds an extra layer of security, even if passwords are compromised.
