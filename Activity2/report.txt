@@ -1,0 +1,60 @@
+Understanding Network Attacks:
+
+Current Understanding:
+
+As a security analyst, you are aware of the company's reliance on its website for sales and promotions.
+You have experience using a monitoring system and packet sniffer for identifying and analyzing network issues.
+You understand the impact of an overwhelming number of TCP SYN requests on the web server's performance.
+Likely Attack Type:
+
+The symptoms described, such as an abnormal volume of TCP SYN requests overwhelming the web server, are indicative of a TCP SYN flood attack.
+In a TCP SYN flood attack, the attacker sends a large number of TCP connection requests, intending to exhaust the server's resources and make it unable to respond to legitimate requests.
+Difference Between DoS and DDoS:
+
+Denial of Service (DoS):
+
+In a DoS attack, a single source is used to flood the target system with traffic, causing a disruption in services.
+The attacker overwhelms the resources of the target, making it unavailable to users.
+Distributed Denial of Service (DDoS):
+
+In a DDoS attack, multiple sources (botnets) are coordinated to flood the target system with traffic.
+DDoS attacks are often more challenging to mitigate because of their distributed nature.
+Website Loading Issue and Connection Timeout:
+
+The website is taking a long time to load, and a connection timeout error is reported because the server is unable to respond to the high volume of incoming TCP SYN requests.
+A connection timeout occurs when the server cannot establish a connection within a specified time, and this is likely due to the server's resources being tied up handling the flood of SYN requests.
+Taking the server offline temporarily and blocking the suspicious IP address are immediate steps to mitigate the impact.
+
+
+
+
+
+
+Attack Description: TCP SYN Flood Attack
+
+Main Symptoms/Characteristics:
+
+Abnormal SYN Requests: The attack involves an overwhelming number of TCP SYN requests.
+Unfamiliar IP Address: SYN requests are coming from an unfamiliar IP address.
+Connection Timeout: Users experience connection timeout errors when trying to access the website.
+Impact on Organization's Network:
+
+Server Overwhelmed: The web server is overwhelmed by the volume of incoming SYN requests.
+Loss of Responsiveness: The server loses its ability to respond to legitimate connection requests.
+Website Downtime: The website experiences a prolonged loading time and reports connection timeout errors.
+Employee Disruption: Employees are unable to access the sales webpage, impacting their ability to search for vacation packages for customers.
+Potential Consequences:
+
+Service Disruption: The attack results in a denial of service for legitimate users, affecting business operations.
+Financial Loss: Downtime on the sales webpage leads to potential financial losses for the travel agency.
+Reputation Damage: Customers may lose trust if they encounter difficulties accessing the company's services, damaging the organization's reputation.
+Operational Inefficiency: The attack disrupts the normal functioning of the website and hampers employee productivity.
+Prevention Measures:
+
+1. Rate Limiting: Implement rate limiting for incoming SYN requests to prevent an excessive number from overwhelming the server.
+2. SYN Cookies: Enable SYN cookies to handle connection requests more efficiently and mitigate the impact of SYN flooding.
+3. Intrusion Prevention Systems (IPS): Deploy IPS to detect and block malicious traffic patterns, providing an additional layer of defense.
+4. Traffic Analysis: Regularly analyze network traffic to detect anomalies and patterns indicative of a potential attack.
+5. Content Delivery Network (CDN): Use a CDN to distribute and manage traffic, providing resilience against volumetric attacks.
+6. Cloud-Based DDoS Protection: Consider cloud-based DDoS protection services that can absorb and filter malicious traffic before it reaches the organization's network.
+7. Employee Training: Educate employees on recognizing and reporting unusual network behavior to enhance overall security awareness.
