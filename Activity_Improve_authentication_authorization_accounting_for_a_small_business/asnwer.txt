@@ -1,0 +1,29 @@
+User Authentication Information:
+
+Review the access log for any signs of unusual login patterns, including locations and times. Identify any login attempts that deviate from the user's typical behavior.
+Cross-reference the access log with the user's device information to determine if there are unexpected or unauthorized devices attempting access.
+Device Information:
+
+Look for details on the device used in the access log. Note the device type, IP address, and any other relevant information.
+Check if the device used is associated with the user's usual devices or if it's a new or unrecognized device.
+Objective: Authorization Issues:
+
+User Access Level:
+
+Investigate the user's access level and permissions to determine if they had access beyond what was necessary for their role.
+Identify any unauthorized changes to the user's permissions, such as recent elevations in access rights.
+Account Status:
+
+Check whether the user's account was active during the incident or if it had been compromised or deactivated.
+Examine any recent changes in the account status, such as suspicious login activities or administrative actions that could indicate unauthorized modifications.
+Objective: Recommendation to Prevent Incident:
+
+Implement Multi-Factor Authentication (MFA):
+
+Enforce the use of multi-factor authentication for all user accounts, especially those with access to sensitive information or financial transactions.
+MFA adds an additional layer of security, requiring users to provide multiple forms of verification, reducing the likelihood of unauthorized access even if credentials are compromised.
+Regularly Review and Update Access Permissions:
+
+Establish a routine process for reviewing and updating user access rights and permissions.
+Conduct regular audits to ensure that users have the minimum necessary access for their roles and promptly revoke any unnecessary privileges.
+Regularly review and update permissions to align with changes in job responsibilities, limiting the potential impact of compromised accounts.
