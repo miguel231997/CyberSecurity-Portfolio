@@ -1,0 +1,14 @@
+Analysis of Incident Factors:
+The incident was likely caused by a failure to adhere to the principle of least privilege during a sales meeting, where an employee inadvertently shared confidential documents with a customer. This breach may have resulted from inadequate access controls and insufficient employee training on data handling protocols.
+
+Summary of NIST SP 800-53: AC-6:
+NIST SP 800-53: AC-6 (Least Privilege) emphasizes restricting access to only authorized entities based on their roles and responsibilities. It underscores the importance of implementing least privilege principles to minimize the risk of unauthorized access and potential data leaks.
+
+Control Enhancement Recommendations:
+
+Role-Based Access Control (RBAC): Implement a robust RBAC system to ensure employees have the minimum necessary access rights based on their roles. This can prevent accidental disclosure of sensitive information by limiting access to confidential documents.
+
+Regular Access Reviews and Training: Conduct regular access reviews to ensure that employees only have access to the data essential for their roles. Additionally, provide ongoing training to employees regarding data handling best practices and the importance of least privilege.
+
+Justification:
+Implementing RBAC ensures that employees have access aligned with their job functions, reducing the risk of unintentional data sharing. Regular access reviews and training contribute to a culture of data security awareness, fostering a proactive approach to preventing data leaks and aligning with NIST SP 800-53: AC-6 guidelines. These measures collectively enhance the organization's overall data security posture.
